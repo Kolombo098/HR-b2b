@@ -1,0 +1,203 @@
+.catalog
+
+    &__header
+        font-size: 30px
+        line-height: 45px
+
+        text-align: center
+        text-transform: uppercase
+
+    &__tabs
+        list-style-type: none
+        display: flex
+        justify-content: center
+        margin-top: 46px
+
+
+    &__tab
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 222px
+        height: 52px
+        margin: 0 5px
+
+
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        box-sizing: border-box
+
+        transform: skew(-25deg)
+        text-align: center
+        text-transform: uppercase
+
+        font-weight: 400
+        color: #6B6B6B
+        transition: 0.5s all
+
+
+        div
+            transform: skew(25deg)
+            font-size: 18px
+
+        &_active
+            border: none
+            background: $main-color
+            color: #fff
+
+        &:hover
+            box-shadow: 3px 3px 20px $main-color
+            cursor: pointer
+
+    .content
+        display: none
+        margin-top: 57px
+
+        &_active
+            display: block
+
+
+        .catalog-item
+            width: 307px
+            height: 446px
+            border: 2px solid #E8E8E8
+            padding: 0
+            margin: 0 auto 19px auto
+            position: relative
+            overflow: hidden
+
+
+            &__wrapper
+                width: 200%
+                display: flex
+
+
+            &__content
+                width: 50%
+                padding: 0 22px
+                transition: 0.5s all
+
+                img
+                    display: block
+                    max-width: 100%
+                    margin: 0 auto
+                    margin-top: 20px
+                    
+                &-active
+                    transform: translatex(-100%)
+            
+            &__name
+                font-weight: 700
+                font-size: 16px
+                line-height: 25px
+                text-align: center
+
+                margin-top: 15px
+
+            &__descr
+                font-size: 14px
+                line-height: 22px
+                text-align: center
+
+                margin-top: 15px
+
+            .more
+                font-weight: 500
+                font-size: 14px
+
+                text-align: center
+                text-transform: uppercase
+
+
+                margin-top: 10px
+
+                &:hover
+                   color: $main-color 
+                   text-decoration-line: underline
+                   cursor: pointer
+
+            &__list
+                width: 50%
+                list-style-type: none
+                padding: 16px 32px
+                padding-bottom: 0
+                transition: 0.5s all
+
+                ul
+                    list-style-type: none
+                    padding: 0
+
+                &-item
+                    position: relative
+
+                    font-size: 14px
+                    line-height: 21px
+                    color: #555555
+
+
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 5px
+                        height: 5px
+                        left: -15px
+                        top: 8px
+                        background-color: $main-color
+
+                &-active
+                    transform: translateX(-100%)
+            
+            .back
+                font-weight: 500
+                font-size: 14px
+
+                text-align: center
+                text-transform: uppercase
+
+                margin-top: 10px
+                position: relative
+                bottom: 0px
+                left: 50%
+                transform: translateX(-50%)
+
+                &:hover
+                   color: $main-color 
+                   text-decoration-line: underline
+                   cursor: pointer
+
+
+
+            hr
+                margin: 17px 22px
+                margin-bottom: 0
+
+            &__footer
+                display: flex
+                justify-content: space-between
+                align-items: start
+                margin-top: 18px
+                padding: 0 22px
+
+            &__price
+                margin-top: 7px
+                
+                .old
+                    font-size: 14px
+                    line-height: 14px
+                    text-decoration-line: line-through
+                    color: #555555
+
+                .new
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 20px
+
+                    color: #050505
+            
+
+
+
+
+
+
+    
