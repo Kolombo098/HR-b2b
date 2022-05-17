@@ -5,9 +5,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
         <link rel="stylesheet" href="css/style.css">
+
     </head>
     <body>
-        
+        <header class="header">
+            <div class="header__official">
+                <a href="#" ><img src="/img/logo.svg" alt="logo" class="header__official-logo"></a>
+            </div>
+            <nav class="header__navigation">
+                <li class="header__navigation-item">
+                    <a href="#">Услуги</a>
+                </li>   
+                <li class="header__navigation-item">
+                    <a href="#">Преимущества</a>
+                </li>
+                <li class="header__navigation-item">
+                    <a href="#">Контакты</a>
+                </li>
+            </nav>
+            <div class="header__call">
+                <a href="tel:89578479494" class="header__call-tel"><img src="/icon/phone_mini.svg" alt="phone" class="header__call-phone">8 957 847 94 94</a>
+                <button class="button_order-call">Заказать звонок</button>
+            </div>
+        </header>
+
+        <section class="promo">
+            <h1 class="promo__header">Своевременный подбор персонала по всей России</h1>
+            <form action="#" class="form form_order-call">
+                <h2 class="form__header">Заказать звонок</h2>
+                <div class="container">
+                    <div class="row form__input-block">
+                        <div class="col-md-6 col-lg-6">
+                            <input name="name" required placeholder="Ваше имя" type="name" class="form__input">
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-6">
+                            <input name="email" required placeholder="Ваш E-mail" type="email" class="form__input">
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-6">
+                            <input name="phone" required placeholder="Ваш телефон" type="tel" class="form__input">
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-6">
+                            <input name="industry" required placeholder="Ваша отрасль" type="text" class="form__input">
+                        </div>
+                        
+                    </div>
+                </div>
+                    <button class="button button_form">Отправить</button>
+            </form>
+            
+        </section>
     </body>
 </html>
