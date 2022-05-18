@@ -10,9 +10,26 @@
 
     margin: 0
     padding: 0
+
 .container
-    padding: 0
-    margin: 0
+
+.title
+    font-size: 50px
+    line-height: 65px
+    text-align: center
+
+    color: #000000
+
+.subtitle
+    font-weight: 400
+    font-size: 30px
+    line-height: 39px
+    text-align: center
+
+    color: #000000
+    margin-top: 31px
+
+
 
 //  background : url("../img/main_bg.jpg") center center/cover no-repeat;
 
@@ -26,6 +43,8 @@
 
 @import "blocks/header"
 @import "blocks/promo" 
+@import "blocks/about-us" 
+@import "blocks/benefits" 
 
 
 @media (max-width: 1501px)
@@ -37,6 +56,14 @@
 
     .form
         width: 625px
+
+
+    .about-us
+        padding: 91px 50px
+
+        &__descr
+            font-size: 20px
+
 
 
 @media (max-width: 1238px)
@@ -61,6 +88,20 @@
         .button_order-call
             width: 169px
             // font-size: 14px
+
+    .about-us
+
+        &__icon-wrap
+            width: 120px
+            height: 120px
+
+        &__icon-img
+            width: 70px
+
+
+        &__descr
+            font-size: 17px
+            line-height: 21px
 
 
 @media (max-width: 999px)
@@ -109,6 +150,13 @@
                 input
                     width: 197px
                     height: 39px
+
+@media (max-width: 991px)
+
+    .about-us
+        padding: 91px 100px
+
+
 
 
 

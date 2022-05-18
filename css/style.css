@@ -11,9 +11,20 @@
   padding: 0;
 }
 
-.container {
-  padding: 0;
-  margin: 0;
+.title {
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+  margin-top: 31px;
 }
 
 .button {
@@ -82,7 +93,7 @@
 }
 
 .form__input {
-  width: 275px;
+  width: 100%;
   height: 47px;
   border: 1px solid #E3E3E3;
   border-radius: 20px;
@@ -211,6 +222,71 @@
   margin-bottom: 52px;
 }
 
+.about-us {
+  min-height: 671px;
+  padding: 91px 137px;
+}
+
+.about-us .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1500px;
+}
+
+.about-us__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 80px;
+}
+
+.about-us__icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #6BB8CB;
+  border-radius: 50%;
+}
+
+.about-us__icon-img {
+  fill: red;
+}
+
+.about-us__descr {
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: #6BB8CB;
+  margin-top: 30px;
+}
+
+.benefits {
+  height: 732px;
+  border: 1px solid black;
+}
+
 @media (max-width: 1501px) {
   .promo {
     padding-left: 150px;
@@ -220,6 +296,12 @@
   }
   .form {
     width: 625px;
+  }
+  .about-us {
+    padding: 91px 50px;
+  }
+  .about-us__descr {
+    font-size: 20px;
   }
 }
 
@@ -235,6 +317,17 @@
   }
   .header .button_order-call {
     width: 169px;
+  }
+  .about-us__icon-wrap {
+    width: 120px;
+    height: 120px;
+  }
+  .about-us__icon-img {
+    width: 70px;
+  }
+  .about-us__descr {
+    font-size: 17px;
+    line-height: 21px;
   }
 }
 
@@ -277,6 +370,12 @@
   .promo .form .container input {
     width: 197px;
     height: 39px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-us {
+    padding: 91px 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
