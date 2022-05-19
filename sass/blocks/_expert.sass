@@ -1,0 +1,82 @@
+.expert
+    position: relative
+    padding: 95px 74px
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    min-height: 413px
+    transition-duration: 0.2s
+
+    &_active
+        min-height: 1013px
+        padding-bottom: 695px
+
+
+    &__tab
+        position: relative
+        width: 17%
+        height: 98.62px
+
+        background: #FFFFFF
+        border: 1px solid #6BB8CB
+        border-radius: 20px
+        text-align: center
+
+        margin: 25px 10px 0 10px
+        cursor: pointer
+
+
+        &_active
+            background: $main_color
+
+            
+
+        &:hover
+            box-shadow: 1px 1px 20px $main_color
+
+
+
+    &__group
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 24px
+        color: $main_color
+
+        &_active
+            color: #fff
+
+
+
+    &__list
+        display: none
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)    
+        margin-bottom: 95px  
+        list-style: none
+
+        bottom: 0
+        text-align: center
+        &_active
+            display: block
+
+        &-item 
+            color: $main_color
+            font-size: 38px
+            line-height: 55px
+            border-radius: 20px
+            background-color: #fff
+            padding: 5px 20px
+            margin-bottom: 20px
+            transition-duration: 0.2s
+
+            &:hover
+                color: #fff
+                background-color: $main_color
+
+
+
+
+
+    
