@@ -1,16 +1,14 @@
 .expert
-    position: relative
-    padding: 95px 74px
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
-    min-height: 413px
-    transition-duration: 0.2s
+    
 
-    &_active
-        min-height: 1013px
-        padding-bottom: 695px
-
+    &__wrap
+        position: relative
+        padding: 95px 74px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        min-height: 413px
+        transition-duration: 0.2s
 
     &__tab
         position: relative
@@ -50,13 +48,15 @@
 
     &__list
         display: none
-        position: absolute
+        position: relative
         left: 50%
         transform: translateX(-50%)    
         margin-bottom: 95px  
         list-style: none
 
-        bottom: 0
+        max-width: 1000px
+
+        top: 100%
         text-align: center
         &_active
             display: block
@@ -70,6 +70,7 @@
             padding: 5px 20px
             margin-bottom: 20px
             transition-duration: 0.2s
+            cursor: pointer
 
             &:hover
                 color: #fff

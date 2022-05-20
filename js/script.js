@@ -18,10 +18,6 @@ $('div.expert__tab').on('click', function() {
 
   
 
-$('div.expert').on('click', function() {
-  $(this)
-  .addClass('expert_active');
-});
 
 
 
