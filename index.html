@@ -19,56 +19,73 @@
             <div class="header__official">
                 <a href="#" ><img src="/img/logo.svg" alt="logo" class="header__official-logo"></a>
             </div>
-            <nav class="header__navigation">
+            <nav class="header__navigation header__navigation_active">
                 <li class="header__navigation-item">
-                    <a href="#">Услуги</a>
+                    <a href="#services" class="hover mr0">Услуги</a>
                 </li>   
                 <li class="header__navigation-item">
-                    <a href="#">Преимущества</a>
+                    <a href="#benefits" class="hover">Преимущества</a>
                 </li>
                 <li class="header__navigation-item">
-                    <a href="#">Контакты</a>
+                    <a href="#footer" class="hover">Контакты</a>
                 </li>
             </nav>
             <div class="header__call">
-                <a href="tel:89578479494" class="header__call-tel"><img src="/icon/phone_mini.svg" alt="phone" class="header__call-phone">8 957 847 94 94</a>
+                <a href="tel:89578479494" class="header__call-tel">
+                    <!-- <img src="/icon/phone_mini.svg" alt="phone" class="header__call-phone"> -->
+                    8 957 847 94 94</a>
+                    <div class="hr"></div>
                 <button class="button_order-call">Заказать звонок</button>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
         </header>
 
         <section class="promo">
-            <h1 class="promo__header">Своевременный подбор персонала по всей России</h1>
-            <form action="#" class="form form_order-call">
-                <h2 class="form__header">Заказать звонок</h2>
-                <div class="container">
-                    <div class="row form__input-block">
-                        <div class="col-md-6 col-lg-6">
-                            <input name="name" required placeholder="Ваше имя" type="name" class="form__input">
-                        </div>
-                        
-                        <div class="col-md-6 col-lg-6">
-                            <input name="email" required placeholder="Ваш E-mail" type="email" class="form__input">
-                        </div>
-                        
-                        <div class="col-md-6 col-lg-6">
-                            <input name="phone" required placeholder="Ваш телефон" type="tel" class="form__input">
-                        </div>
-                        
-                        <div class="col-md-6 col-lg-6">
-                            <input name="industry" required placeholder="Ваша отрасль" type="text" class="form__input">
-                        </div>
-                        
+            <div class="promo__bg">
+                <div class="promo__gradient">
+                    <div class="promo__header">    
+                        <h1 class="promo__title">Своевременный подбор персонала по всей России</h1>
+                        <h2 class="promo__subtitle">Более 20 лет на рынке</h2>
                     </div>
+                    <form action="#" class="form form_order-call">
+                        <h2 class="form__header">Заказать звонок</h2>
+                        <div class="container">
+                            <div class="row form__input-block">
+                                <div class="col-md-6 col-lg-6">
+                                    <input name="name" required placeholder="Ваше имя" type="name" class="form__input">
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-6">
+                                    <input name="email" required placeholder="Ваш E-mail" type="email" class="form__input">
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-6">
+                                    <input name="phone" required placeholder="Ваш телефон" type="tel" class="form__input">
+                                </div>
+                                
+                                <div class="col-md-6 col-lg-6">
+                                    <input name="industry" required placeholder="Ваша отрасль" type="text" class="form__input">
+                                </div>
+                                
+                            </div>
+                        </div>
+                            <button class="button button_form">Отправить</button>
+                    </form>
                 </div>
-                    <button class="button button_form">Отправить</button>
-            </form>
+            </div>
         </section>
 
-        <section class="about-us">
-            <h2 class="title">Кто мы такие</h2>
+         <section class="about-us">
+            <h2 class="title">Кто мы такие?</h2>
             <div class="subtitle">
-                Агентство с присутствием по всей РФ.<br>
-                Реализуем проекты по широкому спектру бизнес юнитов:
+                Команда Around!<br>
+            </div>
+            <div class="subtitle">
+                Реализуем проекты по широкому спектру бизнес-юнитов во всех регионах:
             </div>
             <div class="container-fluid">  
                 <div class="row">             
@@ -116,36 +133,136 @@
             </div>
         </section>
 
-        <section class="benefits">
+        <section id="benefits" class="benefits">
             <div class="title">Наши преимущества</div>
+            <div class="benefits__wrap">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_1.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_1.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Ведение крупных проектов известных брендов
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_2.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_2.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Надежность и долгосрочное взаимодействие с партнерами и клиентами
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_3.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_3.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Скорость и гибкость
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_4.svg" alt="icon" class="benefits__icon-img benefits__icon-img_right benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_4.svg" alt="icon" class="benefits__icon-img benefits__icon-img_right benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Своевременное закрытие вакансий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_5.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_5.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Использование современных технологий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_6.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_6.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Обширная база кандидатов
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_7.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_7.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Профессиональная команда рекрутеров
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="benefits__item">
+                                <div class="benefits__icon-wrap">
+                                    <img src="/icon/benefits_icon_black_8.svg" alt="icon" class="benefits__icon-img benefits__icon-img_black">
+                                    <img src="/icon/benefits_icon_blue_8.svg" alt="icon" class="benefits__icon-img benefits__icon-img_blue">
+                                </div>
+                                <div class="benefits__descr">
+                                    Развитая полевая структура
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
  
         <div class="expert">
             <div class="expert__wrap">
                 <div class="expert__tab">
-                    <div class="expert__group">IT специалисты</div>
+                    <div class="expert__group">Бухгалтерия/Финансы/Банки</div>
                     
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Ритейл (b2b, b2c)</div>
+                    <div class="expert__group">Продажи/Закупки/Торговля/ВЭД</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Банки/Финансы</div>
+                    <div class="expert__group">Строительство</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Маркетинг/Реклама/PR</div>
+                    <div class="expert__group">IT/Телекоммуникации</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Административный персонал</div>
+                    <div class="expert__group">Реклама/Маркетинг/PR</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Производство</div>
+                    <div class="expert__group">Юриспруденция/Консалтинг</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">HORECA</div>
+                    <div class="expert__group">Логистика</div>
                 </div>
                 <div class="expert__tab">
-                    <div class="expert__group">Страхование</div>
+                    <div class="expert__group">Административный персонал/Секретари</div>
+                    <nav class="expert__list"></nav>
+                </div>
+                <div class="expert__tab">
+                    <div class="expert__group">Упраление персоналом </div>
                     <nav class="expert__list"></nav>
                 </div>
                 <div class="expert__tab">
@@ -155,20 +272,23 @@
             </div>
 
             <ul class="expert__list">
-                <li class="expert__list-item">Cистемный администратор</li>
-                <li class="expert__list-item">Модератор форума</li>
-                <li class="expert__list-item">Программист</li>
-                <li class="expert__list-item">Тестировщик</li>
-                <li class="expert__list-item">Специалист по информационной безопасности</li>
-                <li class="expert__list-item">Системный аналитик</li>
+                <li class="expert__list-item">Главный бухгалтер</li>
+                <li class="expert__list-item">Бухгалтер первичной документации</li>
+                <li class="expert__list-item">Экономист</li>
+                <li class="expert__list-item">Финансовый директор</li>
+                <li class="expert__list-item">Аудитор</li>
+                <li class="expert__list-item">Бухгалтер по ТМЦ</li>
+                <li class="expert__list-item">Другие сотрудники</li>
             </ul>
             <ul class="expert__list">
-                <li class="expert__list-item">2</li>
-                <li class="expert__list-item">Модератор форума</li>
-                <li class="expert__list-item">Программист</li>
-                <li class="expert__list-item">Тестировщик</li>
-                <li class="expert__list-item">Специалист по информационной безопасности</li>
-                <li class="expert__list-item">Системный аналитик</li>
+                <li class="expert__list-item">Коммерческий директор</li>
+                <li class="expert__list-item">Тороговый представитель</li>
+                <li class="expert__list-item">Супервайзер</li>
+                <li class="expert__list-item">Менеджер по продажам</li>
+                <li class="expert__list-item">Мерчендайзер</li>
+                <li class="expert__list-item">Руководитель проекта</li>
+                <li class="expert__list-item">Другие сотрудники</li>
+
             </ul>
             <ul class="expert__list">
                 <li class="expert__list-item">3</li>
@@ -193,7 +313,7 @@
             </ul>
         </div>
 
-        <div class="services">
+        <!-- <div id="services" class="services">
             <div class="services__wrap">
                 <div class="services__block services__block_white">
                     <div class="services__block-wrap">
@@ -212,7 +332,7 @@
                     </div>
                 </div>
             </div>
-            <div class="delimiter"></div>
+            <div class="hr"></div>
             <div class="services__wrap">
                 <div class="services__block services__block_white">
                     <div class="services__block-wrap">
@@ -244,13 +364,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="stats">
             <div class="stats__wrap">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xxl-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                             <div class="stats__item">
                                 <img src="/icon/stat_icon_1.svg" alt="icon" class="stats__item-icon">
                                 <div class="stats__item-text">
@@ -259,7 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                             <div class="stats__item">
                                 <img src="/icon/stat_icon_2.svg" alt="icon" class="stats__item-icon">
                                 <div class="stats__item-text">
@@ -267,7 +387,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-4">
+                        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                             <div class="stats__item">
                                 <img src="/icon/stat_icon_3.svg" alt="icon" class="stats__item-icon">
                                 <div class="stats__item-text">
@@ -278,7 +398,7 @@
 
 
 
-                        <div class="col-xxl-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="stats__case">
                                 <div class="stats__case-wrap">
                                     <div class="stats__case-title">
@@ -292,7 +412,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="stats__case">
                                 <div class="stats__case-wrap">
                                     <div class="stats__case-title">
@@ -308,7 +428,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="stats__case">
                                 <div class="stats__case-wrap">
                                         <div class="stats__case-title">
@@ -323,7 +443,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-6">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <div class="stats__case">
                                 <div class="stats__case-wrap">
                                     <div class="stats__case-title">
@@ -371,7 +491,7 @@
             </form>
         </section>
         
-        <footer class="footer">
+        <footer id="footer" class="footer">
             
             <adвress>
                 <a href="tel:8495898838" class="footer__tel">8 (495) 7-898-838

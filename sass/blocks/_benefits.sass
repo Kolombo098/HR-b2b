@@ -1,3 +1,50 @@
 .benefits
-    height: 732px
+    min-height: 732px
     border: 1px solid black
+    padding: 70px 140px
+    background : url("../img/footer_bg.jpg") top center/cover no-repeat
+
+
+    &__wrap
+
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 50px
+
+    &__icon
+
+        &-wrap
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #fff
+            border-radius: 50%
+            width: 128px
+            height: 128px
+
+        &-img
+            width: 60%
+
+            &_black
+                display: none
+
+            &_blue
+                display: block
+
+            &_right
+                position: relative
+                left: 8%
+            
+
+    &__descr
+        font-weight: 400
+        font-size: 22px
+        line-height: 100%
+        text-align: center
+        max-width: 380px
+
+        color: #000000
+        margin-top: 8px

@@ -3,27 +3,32 @@
     width: 177px
     height: 47px
 
-    background: linear-gradient(94.58deg, #6BB8CB -10.01%, #5DCAE6 45.45%, #6BB8CB 110.98%)
-    border: 1px solid #6BB8CB
+    background: linear-gradient(94.58deg, $main_color -10.01%, #5DCAE6 45.45%, $main_color 110.98%)
+    border: 1px solid $main_color
     border-radius: 50px
     font-weight: 400
     font-size: 20px
     line-height: 26px
 
     &_order-call
-        width: 198px
-        height: 47px
+        max-width: 180px
         left: 1674px
         top: 21px
+        font-weight: 400
+        font-size: 24px
+        line-height: 31px
+        background: none
+        border: none
 
-        border: 1px solid #FFFFFF
-        border-radius: 20px
-        background: $main_color
+        color: #000000
+
         transition-duration: 0.3s
 
-        &:hover
-                background-color: #fff
-                color: $main_color
+        // &:hover
+        //         background-color: #fff
+        //         color: $main_color
+        //         text-decoration-line: underline
+
 
     &_form
         margin-top: 31px

@@ -1,26 +1,44 @@
 
-// Slider settings
 
 $(document).ready(function(){
   
+
+
+// Hamburger
+
+
+const menu = document.querySelector('.header__navigation'),
+  menuItem = document.querySelectorAll('.header__navigation-item'),
+  hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('header__navigation_active');
+
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger_active');
+          menu.classList.toggle('header__navigation_active');
+      })
+  })
+
+
+  $('div.hamburger').on('click', function() {
+    $('a.hover').removeClass('hover')
+  });
 //
 // Tabs button
 // 
 
-$('div.expert__tab').on('click', function() {
-  $(this)
-    .addClass('expert__tab_active').siblings().removeClass('expert__tab_active')
-    .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active').siblings().removeClass('expert__list_active')
-    .find('div.expert__group').removeClass('expert__group_active')
-    .eq($(this).find('div.expert__group').addClass('expert__group_active'));
-});
-
-
-  
-
-
-
-
+  $('div.expert__tab').on('click', function() {
+    $(this)
+      .addClass('expert__tab_active').siblings().removeClass('expert__tab_active')
+      .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active').siblings().removeClass('expert__list_active')
+      .find('div.expert__group').removeClass('expert__group_active')
+      .eq($(this).find('div.expert__group').addClass('expert__group_active'));
+  });
 
 
 

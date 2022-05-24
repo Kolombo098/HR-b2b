@@ -1,13 +1,46 @@
 .header
-    position: absolute
+    position: relative
     display: flex
     justify-content: start
+    align-items: start
     width: 100%
     padding: 21px 38px 0 28px
+    height: $header_height_max
+    z-index: 10
+
+    .hamburger
+      position: absolute
+      display: none
+      width: 28px
+      height: 26px  
+      right: 11px
+      top: 11px
+      background: rgba(255, 255, 255, 0.7)
+      border-radius: 20%
+      padding: 8px 3px 0 3px
+      z-index: 1000
+
+
+      span
+        display: block
+        height: 2px
+        width: 100%
+        background: black
+        margin-bottom: 2px
+        transition: 0.5s all
+
+      &_active
+        span
+          &:nth-child(1)
+            transform: rotate(-45deg) translatey(3px) translatex(-4px) 
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg) translatey(0px) translatex(1px) 
 
     &__official
         width: 153px
-        height: 41px
+        height: 42px
         margin-top: 3px
         &-logo
             width: 100%
@@ -19,32 +52,68 @@
         list-style: none
         display: flex
         align-items: center
+        background: rgba(255, 255, 255, 1)
+        border-radius: 20px
+        margin-left: 142px
+        height: 33px
+        transition-duration: 0.3s
+
+        &_active
+          transform: translateX(-100%)
+
+
 
 
         &-item
-            &:first-child
-                    margin-left: 142px
+            display: flex
+            align-items: center
+            border-radius: 20px
+
             & a
+                height: 33px
                 margin-left: 55px
                 border-radius: 20px
-                padding: 5px 15px
+                padding: 0px 20px
                 transition: color 0.3s, background-color 0.3s
                 text-decoration: none
+                color: black
+                font-weight: 400
+                line-height: 33px
+
+                &.mr0
+                    margin-left: 0
+
+
  
                 
-                &:hover
-                    color: $main_color
-                    background-color: #fff
+                &.hover:hover
+                  color: #fff
+                  background-color: $main_color
                     
 
 
     &__call
+        position: relative
         display: flex
         align-items: center
         justify-content: end
 
-        max-width: 400px
+        // max-width: 400px
         margin-left: auto 
+        background: rgba(255, 255, 255, 0.6)
+        border-radius: 20px
+        padding-right: 15px
+        padding-left: 10px
+
+        .hr
+            position: absolute
+            left: 34%
+ 
+            border-top: 1px solid black
+            height: 100px
+            width: 30px
+            opacity: 0.4
+            transform: rotate(90deg)
 
         &-phone
             width: 12.3px
@@ -63,10 +132,16 @@
             border-radius: 20px
             padding: 15px 20px 15px 10px
             transition-duration: 0.3s
+
+            font-weight: 400
+            font-size: 24px
+            line-height: 31px
+
+            color: #000000
             
-            &:hover
-                background-color: #fff
-                color: $main_color
+            // &:hover
+            //     background-color: #fff
+            //     color: $main_color
 
 
 
