@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/bootstrap-grid.rtl.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
@@ -19,7 +20,7 @@
             <div class="header__official">
                 <a href="#" ><img src="/img/logo.svg" alt="logo" class="header__official-logo"></a>
             </div>
-            <nav class="header__navigation header__navigation_active">
+            <nav class="header__navigation">
                 <li class="header__navigation-item">
                     <a href="#services" class="hover mr0">Услуги</a>
                 </li>   
@@ -55,22 +56,12 @@
                         <h2 class="form__header">Заказать звонок</h2>
                         <div class="container">
                             <div class="row form__input-block">
-                                <div class="col-md-6 col-lg-6">
+                                <div class="col-12 col-sm-6">
                                     <input name="name" required placeholder="Ваше имя" type="name" class="form__input">
                                 </div>
-                                
-                                <div class="col-md-6 col-lg-6">
-                                    <input name="email" required placeholder="Ваш E-mail" type="email" class="form__input">
-                                </div>
-                                
-                                <div class="col-md-6 col-lg-6">
+                                <div class="col-12 col-sm-6">
                                     <input name="phone" required placeholder="Ваш телефон" type="tel" class="form__input">
                                 </div>
-                                
-                                <div class="col-md-6 col-lg-6">
-                                    <input name="industry" required placeholder="Ваша отрасль" type="text" class="form__input">
-                                </div>
-                                
                             </div>
                         </div>
                             <button class="button button_form">Отправить</button>
@@ -235,83 +226,149 @@
  
         <div class="expert">
             <div class="expert__wrap">
-                <div class="expert__tab">
-                    <div class="expert__group">Бухгалтерия/Финансы/Банки</div>
-                    
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Продажи/Закупки/Торговля/ВЭД</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Строительство</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">IT/Телекоммуникации</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Реклама/Маркетинг/PR</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Юриспруденция/Консалтинг</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Логистика</div>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Административный персонал/Секретари</div>
-                    <nav class="expert__list"></nav>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Упраление персоналом </div>
-                    <nav class="expert__list"></nav>
-                </div>
-                <div class="expert__tab">
-                    <div class="expert__group">Ваш уникальный запрос</div>
-                    <nav class="expert__list"></nav>
+                <div class="container-fluid">
+                    <div class="row row-10">
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Бухгалтерия/Финансы/Банки</div>
+                            </div>
+                            <ul class="expert__list  animate__animated">
+                                <li class="expert__list-item">Главный бухгалтер</li>
+                                <li class="expert__list-item">Бухгалтер первичной документации</li>
+                                <li class="expert__list-item">Экономист</li>
+                                <li class="expert__list-item">Финансовый директор</li>
+                                <li class="expert__list-item">Аудитор</li>
+                                <li class="expert__list-item">Бухгалтер по ТМЦ</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Продажи/Закупки/Торговля/ВЭД</div>
+                            </div>
+                            <ul class="expert__list  animate__animated">
+                                <li class="expert__list-item">Коммерческий директор</li>
+                                <li class="expert__list-item">Тороговый представитель</li>
+                                <li class="expert__list-item">Супервайзер</li>
+                                <li class="expert__list-item">Менеджер по продажам</li>
+                                <li class="expert__list-item">Продавец консультант</li>
+                                <li class="expert__list-item">Мерчендайзер</li>
+                                <li class="expert__list-item">Руководитель проекта</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 script">
+                            <div class="expert__tab">
+                              <div class="expert__group">Строительство</div>
+                            </div>
+                            <ul class="expert__list down__col-2_992 animate__animated">
+                                <li class="expert__list-item">Начальник ПТО</li>
+                                <li class="expert__list-item">Инженер</li>
+                                <li class="expert__list-item">Прораб</li>
+                                <li class="expert__list-item">Архитектор</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">IT/Телекоммуникации</div>
+                            </div>
+                            <ul class="expert__list down__col-2_992 animate__animated">
+                                <li class="expert__list-item">Программист</li>
+                                <li class="expert__list-item">Web-дизайнер</li>
+                                <li class="expert__list-item">Разработчик</li>
+                                <li class="expert__list-item">Программист Java</li>
+                                <li class="expert__list-item">Системный администратор</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Реклама/Маркетинг/PR</div>
+                            </div>
+                            <ul class="expert__list down__col-3_992 down__col-2_1200 animate__animated">
+                                <li class="expert__list-item">Продюсер видеопродакшн</li>
+                                <li class="expert__list-item">Директор по маркетингу</li>
+                                <li class="expert__list-item">Маркетолог</li>
+                                <li class="expert__list-item">Копирайтер</li>
+                                <li class="expert__list-item">Сециалист по рекламе</li>
+                                <li class="expert__list-item">Таргетолог</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Юриспруденция/Консалтинг</div>
+                            </div>
+                            <ul class="expert__list down__col-3_992 down__col-2_1200 animate__animated">
+                                <li class="expert__list-item">Юристконсульт</li>
+                                <li class="expert__list-item">Юрист</li>
+                                <li class="expert__list-item">Архивариус</li>
+                                <li class="expert__list-item">Адвокат</li>
+                                <li class="expert__list-item">Менеджер проекта</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script offset-xl-2">
+                            <div class="expert__tab">
+                                 <div class="expert__group">Логистика</div>
+                            </div>
+                            <ul class="expert__list down__col-4_992 down__col-2_1200 down animate__animated ">
+                                <li class="expert__list-item">Начальник склада</li>
+                                <li class="expert__list-item">Комлектовщик</li>
+                                <li class="expert__list-item">Кладовщик</li>
+                                <li class="expert__list-item">Грузчик</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Административный персонал/Секретари</div>
+                            </div>
+                            <ul class="expert__list down__col-4_992 down__col-3_1200 down animate__animated ">
+                                <li class="expert__list-item">Секретари</li>
+                                <li class="expert__list-item">Делопроизводитель</li>
+                                <li class="expert__list-item">Личный помощник</li>
+                                <li class="expert__list-item">Администратор</li>
+                                <li class="expert__list-item">Оператор на телефон</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Упраление персоналом </div>
+                            </div>
+                            <ul class="expert__list down__col-5_992 down down__col-3_1200 animate__animated ">
+                                <li class="expert__list-item">HR -менеджер</li>
+                                <li class="expert__list-item">Рекрутер/Менелжер по персоналу</li>
+                                <li class="expert__list-item">Кадровый специалист</li>
+                                <li class="expert__list-item">Тренер</li>
+                                <li class="expert__list-item">HR BP</li>
+                                <li class="expert__list-item">Директор по персоналу</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2 script">
+                            <div class="expert__tab">
+                                <div class="expert__group">Ваш уникальный запрос</div>
+                            </div>
+                            <ul class="expert__list down__col-5_992 down down__col-3_1200 animate__animated ">
+                                <li class="expert__list-item">Главный бухгалтер</li>
+                                <li class="expert__list-item">Бухгалтер первичной документации</li>
+                                <li class="expert__list-item">Экономист</li>
+                                <li class="expert__list-item">Финансовый директор</li>
+                                <li class="expert__list-item">Аудитор</li>
+                                <li class="expert__list-item">Бухгалтер по ТМЦ</li>
+                                <li class="expert__list-item">Другие сотрудники</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
 
-            <ul class="expert__list">
-                <li class="expert__list-item">Главный бухгалтер</li>
-                <li class="expert__list-item">Бухгалтер первичной документации</li>
-                <li class="expert__list-item">Экономист</li>
-                <li class="expert__list-item">Финансовый директор</li>
-                <li class="expert__list-item">Аудитор</li>
-                <li class="expert__list-item">Бухгалтер по ТМЦ</li>
-                <li class="expert__list-item">Другие сотрудники</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">Коммерческий директор</li>
-                <li class="expert__list-item">Тороговый представитель</li>
-                <li class="expert__list-item">Супервайзер</li>
-                <li class="expert__list-item">Менеджер по продажам</li>
-                <li class="expert__list-item">Мерчендайзер</li>
-                <li class="expert__list-item">Руководитель проекта</li>
-                <li class="expert__list-item">Другие сотрудники</li>
 
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">3</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">4</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">5</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">6</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">7</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">8</li>
-            </ul>
-            <ul class="expert__list">
-                <li class="expert__list-item">9</li>
-            </ul>
-        </div>
+            
 
         <!-- <div id="services" class="services">
             <div class="services__wrap">

@@ -76,7 +76,7 @@
       -ms-flex-align: center;
           align-items: center;
   max-width: 662px;
-  height: 369px;
+  height: 300px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 7px rgba(39, 51, 54, 0.2);
           box-shadow: 0px 0px 7px rgba(39, 51, 54, 0.2);
@@ -194,11 +194,6 @@
   height: 33px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-}
-
-.header__navigation_active {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
 }
 
 .header__navigation-item {
@@ -447,17 +442,13 @@
   margin-top: 8px;
 }
 
+.expert {
+  position: relative;
+}
+
 .expert__wrap {
   position: relative;
   padding: 95px 74px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   min-height: 413px;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -465,7 +456,7 @@
 
 .expert__tab {
   position: relative;
-  width: 17%;
+  width: 100%;
   height: 98.62px;
   background: #FFFFFF;
   border: 1px solid #6BB8CB;
@@ -473,10 +464,14 @@
   text-align: center;
   margin: 25px 10px 0 10px;
   cursor: pointer;
+  padding: 0 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .expert__tab_active {
   background: #6BB8CB;
+  margin-bottom: 98.62px;
 }
 
 .expert__tab:hover {
@@ -489,8 +484,9 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 24px;
+  font-size: 20px;
   color: #6BB8CB;
+  line-height: 30px;
 }
 
 .expert__group_active {
@@ -499,37 +495,56 @@
 
 .expert__list {
   display: none;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-bottom: 95px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
   list-style: none;
-  max-width: 1000px;
-  top: 100%;
+  background-color: #6BB8CB;
+  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  top: 230px;
   text-align: center;
 }
 
 .expert__list_active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.expert__list.down {
+  top: 360px;
 }
 
 .expert__list-item {
-  color: #6BB8CB;
-  font-size: 38px;
-  line-height: 55px;
-  border-radius: 20px;
-  background-color: #fff;
-  padding: 5px 20px;
-  margin-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: #6BB8CB;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
-  cursor: pointer;
+  margin-right: 0px;
+  padding: 0 30px;
+  vertical-align: center;
+}
+
+.expert__list-item:last-child {
+  margin: 0;
 }
 
 .expert__list-item:hover {
-  color: #fff;
-  background-color: #6BB8CB;
+  color: #6BB8CB;
+  background-color: #fff;
+}
+
+.offset-xl-2 {
+  margin-right: 0 !important;
 }
 
 .services {
@@ -788,6 +803,13 @@
   .about-us__icon-img {
     width: 87px;
   }
+  .expert__group {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .expert__list-item {
+    padding: 0px 5px;
+  }
 }
 
 @media (max-width: 1238px) {
@@ -826,6 +848,25 @@
   .about-us__descr {
     font-size: 17px;
     line-height: 21px;
+  }
+  .expert__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .expert__list.down__col-2_1200 {
+    top: 354px;
+  }
+  .expert__list.down__col-3_1200 {
+    top: 484px;
+  }
+  .expert__group {
+    font-size: 11px;
+    line-height: 27px;
+  }
+  .expert__list-item {
+    font-size: 16px;
+    padding: 0px 10px;
   }
 }
 
@@ -884,13 +925,13 @@
   .promo__subtitle {
     font-size: 32px;
   }
-  .promo .form {
+  .form {
     width: 500px;
   }
-  .promo .form .container {
+  .form .container {
     margin-top: 21px;
   }
-  .promo .form .container input {
+  .form .container input {
     width: 197px;
     height: 39px;
   }
@@ -931,6 +972,21 @@
   .benefits {
     padding: 91px 100px;
   }
+  .expert__list-item {
+    font-size: 12px;
+  }
+  .expert__list.down__col-2_992 {
+    top: 354px;
+  }
+  .expert__list.down__col-3_992 {
+    top: 479px;
+  }
+  .expert__list.down__col-4_992 {
+    top: 602px;
+  }
+  .expert__list.down__col-5_992 {
+    top: 725px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -950,6 +1006,10 @@
     background: rgba(0, 0, 0, 0.7);
     z-index: 100;
   }
+  .header__navigation_active {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
   .header__navigation-item a {
     position: relative;
     text-align: center;
@@ -961,6 +1021,9 @@
     line-height: 40px;
     height: 80px;
     color: #fff;
+  }
+  .header__call {
+    margin-right: 20px;
   }
   .header .hamburger {
     position: fixed;
@@ -980,6 +1043,11 @@
   .promo__subtitle {
     font-size: 27px;
   }
+  .expert__list-item {
+    font-size: 10px;
+    line-height: 17px;
+    padding: 0px 3px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -996,6 +1064,68 @@
   }
   .benefits__item {
     margin-top: 30px;
+  }
+  .promo__gradient {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .promo__header {
+    max-width: 300px;
+  }
+  .promo__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+  }
+  .header {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding: 11px 38px 0 28px;
+  }
+  .header__official-logo {
+    width: 66%;
+  }
+  .header__call {
+    width: 130px;
+    height: 33px;
+    padding: 0 0 4px 0;
+  }
+  .header__call-tel {
+    font-size: 13px;
+    line-height: 33px;
+  }
+  .header .hr {
+    display: none;
+  }
+  .header .button_order-call {
+    display: none;
+  }
+  .header__navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__navigation-item a {
+    font-size: 15px;
+  }
+  .form {
+    text-align: center;
+    width: 100%;
+  }
+  .form__header {
+    font-size: 28px;
+  }
+  .form .container {
+    margin-top: 0;
+  }
+  .expert__list {
+    display: none;
+  }
+  .expert__tab_active {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

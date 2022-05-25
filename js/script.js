@@ -32,13 +32,38 @@ const menu = document.querySelector('.header__navigation'),
 // Tabs button
 // 
 
-  $('div.expert__tab').on('click', function() {
+  $('div.script').on('click', function() {
+    // .find('div.expert__tab').removeClass('expert__tab_active')
     $(this)
-      .addClass('expert__tab_active').siblings().removeClass('expert__tab_active')
-      .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active').siblings().removeClass('expert__list_active')
-      .find('div.expert__group').removeClass('expert__group_active')
-      .eq($(this).find('div.expert__group').addClass('expert__group_active'));
+      $('div.expert__tab').removeClass('expert__tab_active')
+      .eq($(this).find('div.expert__tab').addClass('expert__tab_active'))
+
+      $('div.expert__group').removeClass('expert__group_active')
+      .eq($(this).find('div.expert__group').addClass('expert__group_active'))
+      
+      $('ul.expert__list').removeClass('expert__list_active')
+      .eq($(this).find('ul.expert__list').addClass('expert__list_active'));
+
   });
+
+      // .addClass('expert__tab_active')
+      // .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active', 'animate__fadeInDown').siblings().removeClass('expert__list_active')
+      // .find('div.expert__group').removeClass('expert__group_active')
+      // .eq($(this).find('div.expert__group').addClass('expert__group_active'));
+ 
+
+
+
+// working tabs
+
+
+// $('div.expert__tab').on('click', function() {
+//   $(this)
+//     .addClass('expert__tab_active').siblings().removeClass('expert__tab_active')
+//     .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active').siblings().removeClass('expert__list_active')
+//     .find('div.expert__group').removeClass('expert__group_active')
+//     .eq($(this).find('div.expert__group').addClass('expert__group_active'));
+// });
 
 
 

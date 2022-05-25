@@ -1,18 +1,19 @@
 .expert
+    position: relative
     
 
     &__wrap
         position: relative
         padding: 95px 74px
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
+        // display: flex
+        // justify-content: center
+        // flex-wrap: wrap
         min-height: 413px
         transition-duration: 0.2s
 
     &__tab
         position: relative
-        width: 17%
+        width: 100%
         height: 98.62px
 
         background: #FFFFFF
@@ -22,10 +23,12 @@
 
         margin: 25px 10px 0 10px
         cursor: pointer
-
-
+        padding: 0 10px
+        transition-duration: 0.2s
         &_active
             background: $main_color
+            margin-bottom: 98.62px 
+
 
             
 
@@ -38,8 +41,10 @@
         position: relative
         top: 50%
         transform: translateY(-50%)
-        font-size: 24px
+        font-size: 20px
         color: $main_color
+        line-height: 30px
+
 
         &_active
             color: #fff
@@ -48,33 +53,48 @@
 
     &__list
         display: none
-        position: relative
-        left: 50%
-        transform: translateX(-50%)    
-        margin-bottom: 95px  
+        justify-content: center
+        align-items: center
+        position: absolute
         list-style: none
+        background-color: $main_color
+        padding: 0 20px
 
-        max-width: 1000px
 
-        top: 100%
+        width: 100%
+        height: 100px
+        left: 0
+        top: 230px
+
         text-align: center
         &_active
-            display: block
+            display: flex
+        
+        &.down
+            top: 360px
+
 
         &-item 
-            color: $main_color
-            font-size: 38px
-            line-height: 55px
-            border-radius: 20px
-            background-color: #fff
-            padding: 5px 20px
-            margin-bottom: 20px
+            color: #fff
+            font-size: 20px
+            border-radius: 50px
+            background-color: $main_color
             transition-duration: 0.2s
-            cursor: pointer
+            margin-right: 0px
+            padding: 0 30px
+            vertical-align: center
+
+
+            &:last-child
+                margin: 0
 
             &:hover
-                color: #fff
-                background-color: $main_color
+                color: $main_color
+                background-color: #fff
+
+.offset-xl-2 
+    margin-right: 0 !important
+
 
 
 

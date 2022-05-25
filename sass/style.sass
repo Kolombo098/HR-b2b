@@ -88,6 +88,20 @@
             &-img
                 width: 87px 
 
+    .expert
+        &__wrap
+
+        &__tab
+
+        &__group
+            font-size: 16px
+            line-height: 23px
+
+        &__list
+
+            &-item
+                padding: 0px 5px
+
 
 
 
@@ -138,6 +152,29 @@
         &__descr
             font-size: 17px
             line-height: 21px
+
+    
+    .expert
+        &__list
+            justify-content: space-between
+            &.down__col-2_1200
+                top: 354px
+            
+            &.down__col-3_1200
+                top: 484px
+
+            
+        &__tab
+
+        &__group
+            font-size: 11px
+            line-height: 27px
+
+        &__list
+
+            &-item
+                font-size: 16px
+                padding: 0px 10px
 
 
 @media (max-width: 999px)
@@ -200,15 +237,15 @@
         &__subtitle
             font-size: 32px
 
-        .form
-            width: 500px
+    .form
+        width: 500px
 
-            .container
-                margin-top: 21px
+        .container
+            margin-top: 21px
 
-                input
-                    width: 197px
-                    height: 39px
+            input
+                width: 197px
+                height: 39px
 
     .about-us
 
@@ -251,6 +288,25 @@
     .benefits
         padding: 91px 100px
 
+    .expert
+        &__list
+
+            &-item
+                font-size: 12px
+            
+            &.down__col-2_992
+                top: 354px
+
+            &.down__col-3_992
+                top: 479px
+
+            &.down__col-4_992
+                top: 602px
+
+            &.down__col-5_992
+                top: 725px
+
+
     
 
 @media (max-width: 768px)
@@ -270,8 +326,10 @@
             // transition-duration: 0.2s all
             z-index: 100
 
-            // &_active
-            //     transform: translateX(-100%)
+            &_active
+                transform: translateX(-100%)
+
+        
 
 
             &-item
@@ -286,17 +344,13 @@
                     line-height: 40px
                     height: 80px
                     color: #fff
+
+        &__call
+            margin-right: 20px
                 
         .hamburger
             position: fixed
             display: block
-
-                    
-
-
-
-
-
 
     .promo
 
@@ -312,6 +366,13 @@
 
         &__subtitle
             font-size: 27px
+
+    .expert
+        &__list
+            &-item
+                font-size: 10px
+                line-height: 17px
+                padding: 0px 3px
 
 
 
@@ -337,6 +398,78 @@
     .benefits
         &__item
             margin-top: 30px
+
+    .promo
+        
+        &__gradient
+            padding-left: 20px 
+            padding-right: 20px 
+
+        &__header
+            max-width: 300px
+
+        &__title
+            font-size: 24px
+            line-height: 32px
+
+        &__subtitle
+            font-size: 20px
+
+
+    .header
+        align-items: start
+        padding: 11px 38px 0 28px
+
+        &__official-logo
+            width: 66%
+
+        &__call
+            width: 130px
+            height: 33px
+            padding: 0 0 4px 0
+            
+            &-tel
+                font-size: 13px
+                line-height: 33px
+        .hr
+            display: none
+
+        .button_order-call
+            display: none
+
+        &__navigation
+            justify-content: center
+
+            &-item
+                a
+                    font-size: 15px
+
+
+
+    .form
+        text-align: center
+        width: 100%
+
+        &__header
+            font-size: 28px
+
+        .container
+            margin-top: 0
+
+        &__input
+
+    .expert
+        &__list
+            display: none
+
+        &__tab
+            &_active
+                margin-bottom: 0
+
+            &:hover
+                
+
+
 
 
     
