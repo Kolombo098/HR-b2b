@@ -23,7 +23,7 @@
 
 
     &__services
-        font-size: 30px
+        font-size: 26px
         line-height: 32px
         color: #000000
         margin-bottom: 20px
@@ -103,6 +103,37 @@
                 padding: 0px 5px
 
 
+    .services
+
+        &__text
+            padding-top: 35px
+            .bold
+
+    
+    .stats
+        &__wrap
+        
+        &__item
+            padding: 0 10px
+            &-icon
+
+            &-text
+                font-size: 26px
+
+                .bold
+                    font-size: 37px
+
+        &__case
+            padding: 20px 10px
+            &-wrap
+
+            &-title
+                margin-bottom: 12px
+
+            &-text
+                font-size: 22px
+                .bold
+                    font-size: 22px
 
 
 
@@ -150,25 +181,18 @@
 
 
         &__descr
-            font-size: 17px
-            line-height: 21px
+            // font-size: 17px
+            // line-height: 21px
 
     
-    .expert
-        &__list
-            justify-content: space-between
-            &.down__col-2_1200
-                top: 354px
-            
-            &.down__col-3_1200
-                top: 484px
+
 
             
         &__tab
 
         &__group
-            font-size: 11px
-            line-height: 27px
+            font-size: 16px
+            line-height: 20px
 
         &__list
 
@@ -177,7 +201,68 @@
                 padding: 0px 10px
 
 
-@media (max-width: 999px)
+
+
+    .services
+
+        &__wrap
+
+        &__block
+            margin: 0 7px
+
+            &-wrap
+
+
+            &_white
+
+            &_transparent
+
+        &__pare
+            
+            & .services__text
+
+                & .bold
+
+                &:first-child 
+                    margin-right: 7px
+                    
+                &:last-child
+                    margin-left: 7px
+
+        &__text
+            
+            .bold
+
+@media (max-width: 1200px)
+    .expert
+
+        &__wrap
+            padding: 94px 36px
+
+        &__list
+            justify-content: space-between
+            &.down__col-2_1200
+                top: 354px
+            
+            &.down__col-3_1200
+                top: 484px
+
+    .stats
+        &__gradient
+            background: linear-gradient(90deg, #fff 0%, #fff 60%, rgba(107, 184, 203, 0) 95%)
+
+
+        &__wrap
+            width: 70%
+
+        &__item
+            &-text
+                font-size: 21px
+                .bold
+                    font-size: 29px
+
+
+@media (max-width: 999px) 
 
     .header
         align-items: center
@@ -259,9 +344,50 @@
 
 
         &__descr
-            font-size: 15px
-            line-height: 18px
+            font-size: 19px
+            line-height: 22px
+            
 
+
+
+    .services
+
+        &__wrap
+
+        &__block
+
+            &-wrap
+
+
+            &_white
+                width: 32%
+                height: 174px
+                position: relative
+                top: 50%
+                &.top
+                    height: 200px
+                    margin-top: 10%
+            &_transparent
+
+        &__pare
+            flex-direction: column
+            align-items: start
+            
+            & .services__text
+                width: 100%
+                font-size: 22px
+
+                & .bold
+
+                &:first-child
+                    margin: 0 0 7px 0
+                
+                &:last-child
+                    margin: 7px 0 0 0
+
+        &__text
+            font-size: 22px
+            .bold
 @media (max-width: 991px)
 
     .title
@@ -287,12 +413,18 @@
 
     .benefits
         padding: 91px 100px
+        
+        &__descr
+            font-size: 19px
+            line-height: 22px 
+ 
 
     .expert
         &__list
 
             &-item
-                font-size: 12px
+                font-size: 14px
+                line-height: 14px
             
             &.down__col-2_992
                 top: 354px
@@ -305,9 +437,16 @@
 
             &.down__col-5_992
                 top: 725px
+        
+    .stats
+        &__gradient
+            background: linear-gradient(90deg, #fff 0%, #fff 70%, rgba(107, 184, 203, 0) 95%)
 
+        &__wrap
+            width: 80%
 
-    
+            
+
 
 @media (max-width: 768px)
 
@@ -328,9 +467,6 @@
 
             &_active
                 transform: translateX(-100%)
-
-        
-
 
             &-item
                 a
@@ -369,19 +505,99 @@
 
     .expert
         &__list
+            flex-wrap: wrap
             &-item
-                font-size: 10px
+                font-size: 14px
                 line-height: 17px
                 padding: 0px 3px
+                width: 167px
+
+    .form
+        &_order-call
+            margin-left: auto
+            margin-right: auto
 
 
 
+    .services
+
+        &__wrap
+            flex-direction: column
+
+        &__block
+
+            &-wrap
 
 
+            &_white
+                width: 100%
+
+                &.top
+                    margin: 0
+                    height: 172px
+
+            &_transparent
+                width: 100%
+
+            
+
+        &__pare
+            margin: 20px 0 0 0 
+            & .services__text
+                font-size: 26px
+                width: 100%
+
+                & .bold
+
+                &:first-child
+                
+                &:last-child
+
+        &__text
+            margin: 20px 0 0 0 
+            
+            .bold
+                font-size: 26px
+                line-height: 42px
+
+
+    .stats
+        &__gradient
+            padding: 30px 40px
+        &__wrap
+            width: 100%
+
+        &__item
+            margin-top: 30px
+            width: 100%
+            
+
+
+    
 
 @media (max-width: 576px)
 
-    .title
+    .form
+        text-align: center
+        width: 100%
+        padding: 26px 23px 23px 16px
+
+        &__header
+            font-size: 28px
+
+        .container
+            margin-top: 0
+
+        &__input
+            width: 200px
+            height: 38px
+
+
+    .button
+        &_form 
+            margin-top: 30px
+
+    .title 
         margin-bottom: 20px
         font-size: 35px
         line-height: 55px
@@ -446,33 +662,52 @@
 
 
 
-    .form
-        text-align: center
-        width: 100%
-
-        &__header
-            font-size: 28px
-
-        .container
-            margin-top: 0
-
-        &__input
+   
 
     .expert
+
+        &__tab
+            width: 90%
+            margin: 25px 5% 0 5%
+
+        &__wrap
+            padding: 0 0 30px 0
+
+        .col-12
+            padding: 0
+
         &__list
-            display: none
+            position: static
+            min-height: 250px
+            flex-direction: column
+            padding: 10px 0
+
+            width: 90%
+            margin: 25px 5% 0 5%
+
+            &-item
+                font-size: 16px
+                width: 100%
+
 
         &__tab
             &_active
                 margin-bottom: 0
-
             &:hover
-                
 
+        
+    .stats
 
+        &__case
 
+            &-title
+                font-size: 22px
 
-    
+            &-text
+                font-size: 17px
+                .bold
+                    font-size: 17px
+
         
 
 

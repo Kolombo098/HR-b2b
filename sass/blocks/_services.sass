@@ -1,69 +1,75 @@
 .services
     background-color: $main_color
-    min-height: 633px
-    padding: 95px 117px
+    min-height: 534px
+    padding: 95px 0
 
     &__wrap
         display: flex
         width: 100%
         align-items: stretch
 
-        &:first-child
-            height: 153px
-
-        &:first-child .services__block_transparent
-            width: 619px
-            
-        &:last-child 
-            height: 210px
-
-        &:last-child .services__block_transparent
-            width: 619/2px
-
-
-
-
     &__block
-        margin-right: 35px
-        border-radius: 20px
-        border: 1px solid #FFFFFF
-        flex-grow: 1
+        margin: 0 17px
+       
+
         &-wrap
             position: relative
             top: 50%
             transform: translateY(-50%)
 
-        &:last-child
-            margin: 0
 
         &_white
             text-align: center
-            width: 442px
+            width: 25%
             border: 1px solid #FFFFFF
-            padding: 29px 70px
+            padding: 17px 24px
             background: #FFFFFF
             flex-grow: 0
+            border-radius: 20px
+            border: 1px solid #FFFFFF
 
         &_transparent
             text-align: center
+            width: 38%
 
+    &__pare
+        display: flex
+        justify-content: space-between
+        height: 100%
+
+        
+        & .services__text
+            font-size: 20px
+
+            & .bold
+                font-size: 26px
+
+
+            &:first-child
+                margin-right: 17px
+            
+            &:last-child
+                margin-left: 17px
 
     &__text
         position: relative
-        top: 50%
-        transform: translateY(-50%)
+        // top: 50%
+        // transform: translateY(-50%)
         font-weight: 400
-        font-size: 30px
+        font-size: 22px
         line-height: 28px
         text-align: center
         margin: 0
-        padding: 20px 40px
+        padding: 20px 5px
+        border-radius: 20px
+        border: 1px solid #FFFFFF
+        height: 100%
 
 
         .bold
             font-weight: 700
-            font-size: 48px
-            line-height: 28px
+            font-size: 40px
+            line-height: 60px
 
             &_little
                 font-size: 32px
