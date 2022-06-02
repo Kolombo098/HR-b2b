@@ -3,6 +3,19 @@
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
+$comment = $_POST['comment'];
+$companyName = $_POST['company_name'];
+$city = $_POST['city'];
+$direction = $_POST['direction'];
+$website = $_POST['website'];
+$address = $_POST['address'];
+$vacancy = $_POST['vacancy'];
+$employeesNumber = $_POST['employees_number'];
+$requirements = $_POST['requirements'];
+$salary = $_POST['salary'];
+$schedule = $_POST['schedule'];
+$description = $_POST['description'];
+$conditions = $_POST['conditions'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -18,8 +31,8 @@ $mail->Password = 'hvstgrcnishhihhu';                           // Наш пар
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('d.boytsov.aroundgroup@gmail.com', 'Pulse');   // От кого письмо 
-//$mail->addAddress('altmake48@gmail.com');     // Add a recipient
+$mail->setFrom('d.boytsov.aroundgroup@gmail.com', 'HR');   // От кого письмо 
+$mail->addAddress('altmake48@gmail.com');     // Add a recipient
 
 
 //$mail->addAddress('ellen@example.com');               // Name is optional
@@ -33,9 +46,22 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
+		Контактное лицо: ' . $name . ' <br>
 	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
+	E-mail: ' . $email . '<br>
+	Комментарий: ' . $comment . '<br>
+	Название компании: ' . $companyName . '<br>
+	Город: ' . $city . '<br>
+	Род деятельности: ' . $direction . '<br>
+	Сайт: ' . $website . '<br>
+	Адрес: ' . $address . '<br>
+	Название вакансии: ' . $vacancy . '<br>
+	Необходимое кол-во сотрудников: ' . $employeesNumber . '<br>
+	Требование к вакансии: ' . $requirements . '<br>
+	Заработная плата или система мотивации: ' . $salary . '<br>
+	График работы: ' . $schedule . '<br>
+	Описание деятельности: ' . $description . '<br>
+	Условия работы: ' . $conditions . '';
 
 if(!$mail->send()) {
     return false;
