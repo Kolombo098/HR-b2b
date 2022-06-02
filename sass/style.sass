@@ -10,6 +10,10 @@
 
     margin: 0
     padding: 0
+    scroll-behavior: smooth
+
+body
+    position: relative
 
 .container
 
@@ -39,6 +43,8 @@
 
 
 
+
+
 @import "base/varibles"
 @import "base/mixins"
 @import "base/buttons"
@@ -53,6 +59,7 @@
 @import "blocks/services" 
 @import "blocks/stats"
 @import "blocks/cost-calculation"
+@import "blocks/modal"
 @import "blocks/footer"
 
      
@@ -71,11 +78,11 @@
             width: 625px
 
     .form
-        width: 625px
+        &_order-call
+            width: 625px
 
 
     .about-us
-        padding: 91px 50px
 
         &__descr
             font-size: 20px
@@ -300,6 +307,7 @@
                 padding: 0
                 margin: 0
                 text-align: center
+                border: none
             
 
         .button_order-call
@@ -323,7 +331,8 @@
             font-size: 32px
 
     .form
-        width: 500px
+        &_order-call
+            width: 500px
 
         .container
             margin-top: 21px
@@ -331,6 +340,10 @@
             input
                 width: 197px
                 height: 39px
+
+        &_cost-calculation
+            .form__input
+                font-size: 16px
 
     .about-us
 
@@ -398,7 +411,7 @@
         margin-top: 10px
 
     .about-us
-        padding: 91px 100px
+        padding: 0px 100px 50px 100px
 
         &__item
             margin-top: 50px
@@ -440,10 +453,20 @@
         
     .stats
         &__gradient
-            background: linear-gradient(90deg, #fff 0%, #fff 70%, rgba(107, 184, 203, 0) 95%)
+            background: linear-gradient(90deg, #fff 0%, #fff 50%, rgba(107, 184, 203, 0) 90%)
 
         &__wrap
             width: 80%
+
+    .form
+        &_cost-calculation
+
+            .form__input
+                padding-left: 14px
+
+            .agreement
+                &__text
+                    font-size: 12px
 
             
 
@@ -517,6 +540,9 @@
             margin-left: auto
             margin-right: auto
 
+        &_modal
+            margin: 0
+
 
 
     .services
@@ -570,7 +596,11 @@
         &__item
             margin-top: 30px
             width: 100%
-            
+
+    .button
+        &_mini
+            z-index: -100  
+            opacity: 0          
 
 
     
@@ -591,6 +621,29 @@
         &__input
             width: 200px
             height: 38px
+
+        &_cost-calculation
+
+            .form
+                &__subtitle
+                    font-size: 21px
+                    line-height: 22px
+                
+                &__input
+                    font-size: 11px
+                    margin: 0px 0 10px 0
+
+            .agreement
+                align-items: start
+                &__checkbox
+                    width: 28px
+
+                &__text
+                    font-size: 10px
+                    margin-left: 5px
+
+                    br
+                        display: block
 
 
     .button
@@ -696,7 +749,16 @@
             &:hover
 
         
+
     .stats
+        &__gradient
+        &__wrap
+
+        &__item
+            margin-top: 30px
+            width: 84%
+            height: 225px
+            margin: 15px auto
 
         &__case
 
@@ -707,6 +769,15 @@
                 font-size: 17px
                 .bold
                     font-size: 17px
+
+
+    .footer
+        &__tel
+            font-size: 18px
+        &__mail
+            font-size: 18px
+        &__address
+            font-size: 18px
 
         
 

@@ -50,17 +50,45 @@
         line-height: 31px
         background: none
         border: none
+        margin-left: 5px
 
         color: #000000
 
         transition-duration: 0.3s
 
-        // &:hover
-        //         background-color: #fff
-        //         color: $main_color
-        //         text-decoration-line: underline
+        &:hover
+                color: $main_color
+                // text-decoration-line: underline
+                border-bottom: 3px solid $main_color
 
 
     &_form
         margin-top: 14px
         
+
+    &_mini
+        display: none
+        position: fixed
+        right: 20px
+        bottom: 100px
+        width: 70px
+        height: 70px
+        border-radius: 5px
+        box-shadow: 1px 1px 20px white
+
+
+        img
+            height: 40px
+            position: relative
+            top: 50%
+            left: 50%
+            transform: translateY(-50%) translateX(-50%)
+            z-index: 100000
+
+        &:hover:before 
+            width: 100%
+            opacity: 1
+            border-radius: 0px
+    &_phone
+
+        bottom: 200px

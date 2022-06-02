@@ -46,6 +46,22 @@ const menu = document.querySelector('.header__navigation'),
 
   });
 
+
+
+
+  //Modal
+
+  $('div.button_phone, .button_order-call').on('click', function() {
+    $(this)
+      $('.modal').fadeIn();
+  });
+
+
+  $('div.back').on('click', function() {
+    $(this)
+      $('.modal').fadeOut();
+  });
+
       // .addClass('expert__tab_active')
       // .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active', 'animate__fadeInDown').siblings().removeClass('expert__list_active')
       // .find('div.expert__group').removeClass('expert__group_active')
@@ -53,6 +69,18 @@ const menu = document.querySelector('.header__navigation'),
  
 
 
+
+  //Smooth scroll
+
+  $(window).scroll(function () {
+    if($(this).scrollTop() > 800) {
+      $('.button_mini').fadeIn();
+      } else {
+      $('.button_mini').fadeOut();
+
+      }
+  });
+  
 
 // working tabs
 
