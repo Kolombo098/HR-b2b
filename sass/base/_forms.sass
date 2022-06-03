@@ -80,15 +80,14 @@
                 font-size: 18px
                 line-height: 23px
                 color: #B6B6B6
-                text-decoration: none
+                text-decoration: underline
                 transition-duration: 0.3s
-                margin: 0 0 0 10px
+                margin: 0 0 0 0px
 
 
 
                 &:hover
                     color: $main_color
-                    border-bottom: 2px solid $main_color
 
 
                 br
@@ -125,8 +124,7 @@
         line-height: 26px
 
 
-        color: #B6B6B6
-        -webkit-text-fill-color: #B6B6B6
+        color: #000
 
         margin-top: 10px
 
@@ -144,8 +142,11 @@
         margin: 0
 
 
-        
-
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button 
+        -webkit-appearance: none
+        margin: 0
 
             
 

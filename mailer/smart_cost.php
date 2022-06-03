@@ -43,7 +43,7 @@ $mail->addAddress('altmake48@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Запрос на стоимость от ' . $name . '';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 		Контактное лицо: ' . $name . ' <br>

@@ -53,7 +53,7 @@ const menu = document.querySelector('.header__navigation'),
 
   $('div.button_phone, .button_order-call').on('click', function() {
     $(this)
-      $('.modal').fadeIn();
+      $('.modal_cost').fadeIn();
   });
 
 
@@ -89,17 +89,14 @@ const menu = document.querySelector('.header__navigation'),
 // Form submit
 // 
 
-  $('form').submit(function(e) {
+  $('.form_order-call').submit(function(e) {
     e.preventDefault();
     $.ajax({
       type: "POST",
-      url: "mailer/smart.php",
+      url: "mailer/smart_call.php",
       data: $(this).serialize()
     }).done(function() { 
       $(this).find("input").val("");
-
-
-
 
       $('form').trigger('reset');
     });
@@ -110,13 +107,32 @@ const menu = document.querySelector('.header__navigation'),
     return false;
   });
 
+  $('.form_cost-calculation').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart_cost.php",
+      data: $(this).serialize()
+    }).done(function() { 
+      $(this).find("input").val("");
+
+      $('form').trigger('reset');
+    });
+    $('#modal').fadeOut();
+    $('#thanks').fadeIn();
 
 
+    return false;
+  });
+
+  $("#phone_1").mask("+7(999) 999-99-99");
+  $("#phone_2").mask("+7(999) 999-99-99");
+  $("#phone_3").mask("+7(999) 999-99-99");
+
+  
 
 
-
-
-
+// form validate
 
 
 
