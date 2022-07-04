@@ -1,6 +1,61 @@
 
 
 $(document).ready(function(){
+//Carousel
+
+$('.carousel__inner').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: false,
+  arrows: true,
+  centerPadding: '10px',
+  prevArrow: '<button type="button" class="slick-prev"><img src="../icon/leftArrow.svg" alt="arrow"></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="../icon/rightArrow.svg" alt="arrow"></button>',
+
+  responsive: [
+    {
+      breakpoint: 1101,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 578,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1 
+      }
+    } 
+  ]
+});
+ 
+$('.logo').slick({
+  slidesToShow: 9,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: false,
+  arrows: false,
+  centerPadding: '10px',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
   
 
 
@@ -21,12 +76,12 @@ const menu = document.querySelector('.header__navigation'),
       item.addEventListener('click', () => {
           hamburger.classList.toggle('hamburger_active');
           menu.classList.toggle('header__navigation_active');
-      })
-  })
+      });
+  });
 
 
   $('div.hamburger').on('click', function() {
-    $('a.hover').removeClass('hover')
+    $('a.hover').removeClass('hover');
   });
 //
 // Tabs button
@@ -34,12 +89,12 @@ const menu = document.querySelector('.header__navigation'),
 
   $('div.script').on('click', function() {
     // .find('div.expert__tab').removeClass('expert__tab_active')
-    $(this)
+    $(this);
       $('div.expert__tab').removeClass('expert__tab_active')
-      .eq($(this).find('div.expert__tab').addClass('expert__tab_active'))
+      .eq($(this).find('div.expert__tab').addClass('expert__tab_active'));
 
       $('div.expert__group').removeClass('expert__group_active')
-      .eq($(this).find('div.expert__group').addClass('expert__group_active'))
+      .eq($(this).find('div.expert__group').addClass('expert__group_active'));
       
       $('ul.expert__list').removeClass('expert__list_active')
       .eq($(this).find('ul.expert__list').addClass('expert__list_active'));
@@ -52,22 +107,38 @@ const menu = document.querySelector('.header__navigation'),
   //Modal
 
   $('div.button_phone, .button_order-call').on('click', function() {
-    $(this)
+    $(this);
       $('.modal_cost').fadeIn();
   });
 
 
   $('div.back').on('click', function() {
-    $(this)
+    $(this);
       $('.modal').fadeOut();
   });
+
+  // $('div.overlay').on('click', function() {
+  //   $(this);
+  //     $('.modal').fadeOut();
+  // });
+
+  // $('div.back_pop-up').on('click', function() {
+  //   $(this);
+  //     $('.pop-up').fadeOut();
+  // });
 
       // .addClass('expert__tab_active')
       // .closest('div.expert').find('ul.expert__list').eq($(this).index()).addClass('expert__list_active', 'animate__fadeInDown').siblings().removeClass('expert__list_active')
       // .find('div.expert__group').removeClass('expert__group_active')
       // .eq($(this).find('div.expert__group').addClass('expert__group_active'));
  
+  //Order call
 
+  $('form.form__appeare').on('click', function() {
+    $(this)
+      .addClass('form__appeare_active'); 
+      $('a.cost-link').addClass('cost-link_active');
+  });
 
 
   //Smooth scroll
@@ -99,6 +170,7 @@ const menu = document.querySelector('.header__navigation'),
       $(this).find("input").val("");
 
       $('form').trigger('reset');
+
     });
     $('#modal').fadeOut();
     $('#thanks').fadeIn();
@@ -129,12 +201,18 @@ const menu = document.querySelector('.header__navigation'),
   $("#phone_2").mask("+7(999) 999-99-99");
   $("#phone_3").mask("+7(999) 999-99-99");
 
-  
+//Form appeare
+
+$('button.button_cost-calculation').on('click', function() {
+  $(this);
+    $('.form_cost-calculation').fadeIn();
+    $('.button_form').fadeIn();
+});
 
 
-// form validate
 
 
+ 
 
 
 
